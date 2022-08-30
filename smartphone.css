@@ -1,0 +1,151 @@
+
+.nav ul li {
+    font-size: 1.2rem;
+}
+.nav ul li a{
+    padding: 2px 5px;
+    color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+}
+#home .main{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    top: 30%;
+}
+#home .main p{
+    width: 200px;
+}
+#about{
+    background: green;
+    margin-left: 10px;
+    height: 600px;
+    width: 90%;
+    
+}
+#about .about-main .headi{
+    margin-top: 0;
+    padding-top: 0;
+}
+#about .about-main .page1{
+    padding-top: 0;
+}
+
+#portfolio{
+    margin-top: 550px;
+    height: 600px;
+}
+
+
+#portfolio .work{
+    margin-top: 10px;
+}
+
+.portfolio-box{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    
+}
+.portfolio-box .box{
+
+    margin-left: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    
+} 
+
+#contact{
+    height: 760px;
+}
+#contact .contact{
+    display: block;
+    position: relative;
+}
+.contact .form{
+    display: inline-block;
+    margin-left: -90px;
+}
+
+
+.contact .form .form-la{
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    position: absolute;
+    top: 27.5%;
+    margin-left: 100px;
+}
+.form input[type=text]{
+    display: flex;
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 45px;
+    margin-left: 100px;
+}
+
+.form input[type=email]{
+    margin-left: 100px;
+    width: 50%;
+}
+
+.form #box-email{
+    margin-left: 100px;
+}
+
+.form .message{
+    margin-left: 100px;
+    width: auto;
+}
+.form .btn{
+    margin-top: 200px;
+}
+.contact .form-page{
+    color: blue;
+    
+}
+#contact .info{
+    margin-top: 30px;
+}
+
+.info ul li a{
+    padding: 5px;
+}
+
+.contact footer{
+    margin-top: 100px;
+    right: 50px;
+}
+
+/* for favorite quote */
+
+.contaier .main .quote{
+    font-size: 1.2rem;
+    padding: 10px 0;
+    
+}
+
+/* for accor styling */
+
+main-accor{
+    max-width: 80%;
+}
+
+.main-accor .main-head{
+    margin-bottom: 2rem;
+    font-size: .9rem;
+    border-bottom: 1px solid white;
+}
+
+.main-container.active .main-body{
+    
+    height: 200px;
+    font-size: 1.1rem;
+}

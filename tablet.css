@@ -1,0 +1,70 @@
+
+.nav ul li a{
+    padding: 4px 20px;
+    color: white;
+}
+
+#about{
+    background: red;
+    height: 450px;
+    width: 90%;
+}
+
+#about .about-main .headi{
+    margin-top: 0;
+    padding-top: 0;
+}
+#portfolio{
+    
+    height: 650px;
+}
+.portfolio-box{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 27px;
+    
+}
+.portfolio-box .box{
+
+    margin-left: 80px;
+    padding: 10px;
+    width: 350px;
+    height: 250px;
+    
+    
+} 
+#contact{
+    
+    height: 700px;    
+}
+
+.contact .form .form-la{
+    
+    column-gap: 0;
+}
+.form input[type=text]{
+    display: inline-block;
+    margin-left: 70px;
+    width: 20%;
+    
+}
+.form .message{
+    margin-left: 70px;
+    width: 300px;
+}
+#contact .contact{
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 300px;
+}
+.form .btn{
+    margin-top: 500px;
+}
+#contact .info{
+    margin-top: 30px;
+}
+.contact footer{
+    text-align: center;
+    margin-top: 740px;
+    right: 100px;
+}

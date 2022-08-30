@@ -1,0 +1,478 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+body{
+    overflow-x:hidden;
+    background: white;
+   
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+.nav ul{
+    display: flex;
+     list-style: none;
+     margin: 20px 0;
+}
+
+.nav ul li {
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav ul li a{
+    padding: 8px 25px;
+    color: white;
+}
+.nav ul li a:hover{
+    
+    box-shadow: 0 0 10px white;
+    background: white;
+    color: black;
+
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 850px;
+    color: seashell;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    width:100%;
+    height: 900px;
+    background: url(1548686474966.jpg), no-repeat, center, center/cover;
+    
+}
+
+ #home .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top:50%;
+    line-height: 1.8;
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.2rem;
+} 
+#home .main h1{
+    color: darksalmon;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 2.6rem;
+    font-family: 'Playfair Display', serif;
+}
+
+#home .main p{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 400px;
+}
+.me{
+    border: 1px solid white;
+    padding: 5px 2px;
+    margin-top: 5px;
+    font-size: 1rem;
+    outline: none;    
+}
+.me:hover{
+    
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0, 0, 10px white;
+    transform: .6s ease;
+}
+
+#about{
+    background: #f1f1f1;
+    border-radius: 10px;
+    border: 1px solid #2222;
+    box-shadow: 0 0 10px #2222;
+    height: 400px;
+   margin-left: 50px;
+   width: 85%;
+    top: 850px;
+    position: absolute;
+    overflow: hidden;
+   z-index: 2;
+}
+
+.about-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    color: black;
+}
+#about .about-main .headi{
+    margin-top: 15px;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    font-family: 'Zilla Slab', serif;
+}
+
+#about .about-main .page1{
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    line-height: 2;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    font-family: 'Zilla Slab', serif;
+}
+
+.page h5{
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 1.1rem;
+    color: brown;
+    font-weight: bolder;
+}
+
+.page p{
+    margin-top: 10px;
+
+
+}
+
+.headi span{
+    color: pink;
+}
+#about .page{
+  
+    
+}
+
+#portfolio{
+    margin-top: 400px;
+    background: lightslategray;
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+    z-index: -2;
+    border-radius: 15px; 
+    
+}
+#portfolio .headi{
+    
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+#portfolio .work{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: wheat;
+    
+}
+
+.portfolio-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: auto;
+}
+
+ .portfolio-box .box{
+    background: white;
+    
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    
+} 
+
+.portfolio-box .box:hover{
+    background: white;
+    transform: .6s ease;
+    box-shadow: 0 10px 5px white;
+}
+
+
+.box .quote-text{
+    font-size: 1.5rem;
+    line-height: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box .quote-li{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#contact{
+    background: darkgrey;
+    height: 600px;
+    color: black;
+    z-index: 2;
+    
+}
+
+#contact .contact{
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-column-gap: 300px;
+}
+
+.contact .form-page{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: ivory;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.contact .form{
+    display: flex;
+    flex-direction: column;
+}
+.contact .form .form-la{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+.contact .form .text{
+    justify-content: center;
+    align-items: center;
+}
+
+.form input[type=text]{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 15px 70px;
+    border: 1px solid  white;
+    border-radius: 10px;
+    width: 30%;
+    
+}
+
+.form #box-email{
+    font-size: 1.2rem;
+    margin-left: 5px;
+    margin-top: 10px;
+    
+}
+.form input[type=email],[type=submit]{
+    padding: 15px 10px;
+    border: 1px solid  white;
+    border-radius: 10px;
+    width: 315px;
+    margin-top: 10px;
+    margin-left: 5px;
+    
+}
+
+.form .message{
+    border-radius: 10px;
+    width: 320px;
+    margin-top: 20px;
+    padding: 0 15px;
+    resize: none;
+    margin-left: 50px;
+}
+
+
+.form .btn{
+    width: 100px;
+    position: absolute;
+    right: 150px;
+    margin-top: 490px;
+    background-color: tomato;
+    color: white;
+    
+}
+
+.form .btn:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border-color: transparent;
+    transition: .6s linear;
+}
+
+
+#contact .info{
+    margin-top: 350px;
+}
+.info ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.info ul li a{
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: white;
+    
+    
+}
+
+.contact footer{
+    position: absolute;
+    right: 500px;
+    margin-top: 530px;
+    font-size: 1.2em;
+    font-style: oblique;
+}
+
+/* Favourite quote style */
+.contaier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: url(pexels-james-wheeler-1519088.jpg), no-repeat, center, center/cover;
+
+}
+
+.contaier .heading{
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.contaier .main .main-container{
+    margin-top:20px ;
+    background: white;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow:  0 0 10px black;
+    overflow: hidden;
+    
+}
+
+.contaier .main-container:active{
+    background: grey;
+}
+
+
+.contaier .main .quote{
+    font-size: 1.5rem;
+    padding: 30px 0;
+    line-height: 1.4;
+}
+
+.contaier .main .author{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: sienna;
+    margin-top: 30px;
+}
+
+
+.contaier .main .btn-next button{
+    top: 450px;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background: teal;
+    cursor: pointer;
+    position: absolute;
+}
+
+.contaier .main .btn-next button:active{
+    background: green;   
+}
+
+
+/* accordion style */
+
+.main-accor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 60%;
+    margin-top: 10%;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: aquamarine;
+    box-shadow: 0 5px 10px aquamarine;
+}
+
+.main-accor .main-container{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+.main-accor .main-head{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid white;
+}
+
+.main-accor .main-head::after{
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: green;
+}
+
+.main-accor .main-body{
+    line-height: 1;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    height: 0;
+   overflow: hidden;
+   transition: .6s;
+
+}
+.main-container.active .main-body{
+    height: 120px;
+    font-size: 1.3rem;
+}
+.main-container.active .main-head{
+    transition: .6s;
+    font-size: .8rem;
+}
+.main-container.active .main-head::after{
+    content: "_";
+    top: -20px;
+    color: red;
+    font-size: 2.5rem;
+
+}
